@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo Skis</title>
+	<link rel="stylesheet" type="text/css" href="demoSkis.css">
+	<script type="text/javascript" src="demoSkis.js"></script>
+</head>
+<body>
+	<h1>Demo Skis</h1>
+	<input type="radio" onclick="filterSelection('all')" name="category" checked> All Skis
+	<input type="radio" onclick="filterSelection('powder')" name="category"> Powder Skis
+	<input type="radio" onclick="filterSelection('mountain')" name="category"> All-Mountain Skis
+	<input type="radio" onclick="filterSelection('front')" name="category"> Front-Side Skis
+	<table>
+		<thead>
+			<tr class="header">
+				<th>Brand</th>
+				<th>Model</th>
+				<th>Lengths</th>
+				<th>Descriptions</th>
+			</tr>
+			<tr>
+				<td>Atomic</td>
+				<td>Vantage W 74</td>
+				<td>146, 152, 158 </td>
+				<td>The Atomic Vantage X 74 W is a confidence-boosting all-mountain system ski forfemale skiers who spend most of the time on piste. Groomers, here we come!</td>
+			</tr>
+			<tr>
+				<td>Atomic</td>
+				<td>Vantage 95</td>
+				<td>162, 170, 178, 186</td>
+				<td>The Atomic Vantage 95 C ski is perfectly balanced for hard pack and soft snow.With a 95mm waist width it’s the second widest model in our progressive allmountain Vantage series - a ski to take skiers anywhere, any time. This ski is truely all-mountain</td>
+			</tr>
+			<tr>
+				<td>Atomic</td>
+				<td>Vantage 85</td>
+				<td>157, 165, 173,181</td>
+				<td>If you want an all-mountain ski that really performs on the piste, you’ll love the Atomic Vantage 85. It’s an easy-to-handle option that works all over the whole</td>
+			</tr>
+			<tr>
+				<td>Atomic</td>
+				<td>Vantage W 95</td>
+				<td>154, 162</td>
+				<td>The Atomic Vantage 95 C W is our top progressive all-mountain ski for women.It has a 95mm waist width and distinctly wide footprint for performing in any snow and on any terrain. This ski is truely all mountain</td>
+			</tr>
+			<tr>
+				<td>Atomic</td>
+				<td>Vantage W 85</td>
+				<td>149, 157, 165</td>
+				<td>The Atomic Vantage 85 W is the perfect choice if you like the piste but lovedipping into the powder. It’s the smaller-waist option in our popular Vantageseries – progressive all-mountain skis built to be great on hard pack and equally good in soft snow.</td>
+			</tr>
+			<tr>
+				<td>Atomic</td>
+				<td>Backland FR 109</td>
+				<td>175, 182, 189</td>
+				<td>The Atomic Backland FR 109 ski delivers the very best in Big Mountain powder performance. It’s built for charging in deep snow and chop with total confidence.</td>
+			</tr>
+			<tr>
+				<td>Atomic</td>
+				<td>Backland FR 102 </td>
+				<td>164, 172, 180, 189</td>
+				<td>If you’re looking to explore the entire mountain in search of deeper snow, the Atomic Backland FR 102 ski is your ideal companion. At the same time the pronounced camber underfoot ensures optimum edge grip and makes the ski super versatile on hard and mixed snow, too.</td>
+			</tr>
+			<tr>
+				<td>Atomic</td>
+				<td>Backland FR W 109</td>
+				<td>159, 167</td>
+				<td>We’ve built the Atomic Backland FR W 109 ski for women skiers who rip in powder. It’s the top ski in our new range of freeride powder chargers –successors to the popular century range</td>
+			</tr>
+			<tr>
+				<td>Atomic</td>
+				<td>Backland FR W 102</td>
+				<td>156, 164</td>
+				<td>The Atomic Backland FR 102 is an easy-going powder ski that’s also versatile enough to deliver top performance on hard pack, and a wide 102mm waist mean it handles the groomers no problem.</td>
+			</tr>
+			<tr>
+				<td>Atomic</td>
+				<td>Infamous</td>
+				<td>151, 161, 171, 176</td>
+				<td>The Atomic Infamous is our fully loaded Park ski. Inspired by Jossi Wells and built to match the vision of the X Games star, Infamous is all about soft flex and outstanding toughness. When it comes to getting creative in the park, the Infamous is just the tool for the job.</td>
+			</tr>
+			<tr>
+				<td>Armada</td>
+				<td>JJ 2.0</td>
+				<td></td>
+				<td>The ski that changed men’s powder riding forever returns with its trademark flotation, edging and all around faceshot-making, deep-snow-buttering fun. The JJ 2.0 embraces its heritage as one of the most-awarded, and biggest, developmental leaps in skiing history and carries it forward in 16/17.</td>
+			</tr>
+			<tr>
+				<td>Armada</td>
+				<td>TST</td>
+				<td></td>
+				<td>The TST’s party-in-the-front-business-in-the-back mentality makes this the most versatile men’s ski in our lineup: ready to chase powder, punch through the crud and give groomers the business on the way back to the lift. A rockered tip gives you the float you’re looking for, while a flat tail is backing you up with power and stability.</td>
+			</tr>
+			<tr>
+				<td>Armada</td>
+				<td>Invictus 85</td>
+				<td></td>
+				<td>Boasting the lightest construction of our 16/17 Invictus line, the Invictus 85 is also the quickest edge to edge. Lively, fun and effortless to put on edge and drive through a turn – point this ski downhill and let it take care of the rest. Great all mountain ski that can rip the groomers</td>
+			</tr>
+			<tr>
+				<td>Armada</td>
+				<td>Invicta W 93</td>
+				<td></td>
+				<td>This particular one comes in a 93mm width, providing it with extra versatility across the mountain with improved soft snow performance. This all mountain ski will take you anywhere you want to go.</td>
+			</tr>
+			<tr>
+				<td>Armada</td>
+				<td>VJJ 2.0</td>
+				<td></td>
+				<td>Pow turns have never been as fun and easy on this iconic women’s powder ski. Super playful and lively thanks to a Hybrid Ultra-Light Core, the VJJ 2.0 begs to hit your favorite tree stashes before ripping the hardpack on the way back to</td>
+			</tr>
+			<tr>
+				<td>Armada</td>
+				<td></td>
+				<td></td>
+				<td>Do whatchyalike with this, the most versatile women’s ski in our lineup. Chase powder, punch through the crud and drive through turns – the TSTw’s EST All Mountain Rocker handles it all and with a Hybrid Ultra-Lite Core it stays as playful as you are.</td>
+			</tr>
+			<tr>
+				<td>Blizzard</td>
+				<td>Brahma</td>
+				<td>166, 173, 180</td>
+				<td>The Brahma is the go-to ski on days when cold temps and dry spells make for firm snow conditions. Roll them over on groomers thanks to Brahma's camberunderfoot bookended by rocker in the tip and tail. Have fun carving turns on ice, blasting through crud or floating on fresh because of Carbon Flipcore Technology</td>
+			</tr>
+			<tr>
+				<td>Blizzard</td>
+				<td>Black Pearl</td>
+				<td>145, 152, 158</td>
+				<td>The Black Pearl is the backbone of the women’s freeride line and intermediate to expert women rave about the fun this ski dishes out on a daily basis.  The Black Pearl is the most versatile ski in the Blizzard women’s line up. On groomers, in the trees, through bumps and in powder, the Black Pearl performs in every type of terrain</td>
+			</tr>
+			<tr>
+				<td>Blizzard</td>
+				<td>Bonafide</td>
+				<td>173, 180, 187</td>
+				<td>This do-everything ski includes a 98mm waist. The Bonafide is the most versatile ski in Blizzard’s Freeride lineup. You can spend almost everyday next winter on the Bonafide and you won’t regret it.</td>
+			</tr>
+			<tr>
+				<td>Dynastar</td>
+				<td>Powertrack 84</td>
+				<td>162, 169, 176, 183</td>
+				<td>Combining the best elements of modern freeride and all-mountain ski design, this breakthrough new one-ski-quiver provides a huge sweet spot, keeping you firmly balanced in the driver's seat across all terrain and snow conditions.</td>
+			</tr>
+			<tr>
+				<td>Dynastar</td>
+				<td>Powertrack 79</td>
+				<td>159, 166, 173, 180, </td>
+				<td>A progressive five-point sidecut allows for powerful carved turns that engagequickly and release with ease in any snow condition, providing the consistent yet playful versatility and control that sets a new all-mountain standard. Equal parts power and playfulness, maneuverability and control</td>
+			</tr>
+			<tr>
+				<td>Fischer</td>
+				<td>Pro Mountain 80 TI</td>
+				<td>159, 166, 173, 180</td>
+				<td>One of the most dependable and versatile skis in Fischer's new Pro Mountaincollection! With an 80 mm waist and Air Tec Ti, Wood Core construction, it falls right in the wheelhouse for intermediate to advanced level skiers all over the globe.</td>
+			</tr>
+			<tr>
+				<td>Fischer</td>
+				<td>Fischer Ranger 98Ti</td>
+				<td>172, 180, 188</td>
+				<td>Testers gave the 98-mm-waisted ski high scores for playfulness, lower for carving and stability. The tips are light and stay on top of powder with this smooth and consistent ski.</td>
+			</tr>
+			<tr>
+				<td>Fischer</td>
+				<td>Fischer Ranger 90Ti</td>
+				<td>165, 172, 179</td>
+				<td>Reliable performance in all terrain: powder, piste and rough terrain – the Ranger 90 Ti gives you stability in every situation. Thanks to Carbon Tip and Sandwich Sidewall.</td>
+			</tr>
+			<tr>
+				<td>Head</td>
+				<td>Strong Instict Ti</td>
+				<td>165, 172, 179</td>
+				<td>The mid-fat Strong Instinct Ti is an easy-riding all-condition carver for intermediate skiers who class the entire mountain as their learning ground.</td>
+			</tr>
+			<tr>
+				<td>Head</td>
+				<td>Strong Instict Ti</td>
+				<td>165, 172, 179</td>
+				<td>Smooth riding and responsive the Pure Joy is a confidence building progression tool for beginner and intermediate women. LIBRA ski architecture endows the Pure Joy with lightness, perfect balance and outstanding control in all</td>
+			</tr>
+			<tr>
+				<td>Head</td>
+				<td>Pure Joy</td>
+				<td>143, 148, 153</td>
+				<td>Smooth riding and responsive the Pure Joy is a confidence building progression tool for beginner and intermediate women. LIBRA ski architecture endows the Pure Joy with lightness, perfect balance and outstanding control in all</td>
+			</tr>
+			<tr>
+				<td>Icelantic</td>
+				<td>Nomad 95</td>
+				<td>161, 171, 181</td>
+				<td>Its 95mm platform, rockered tip and tail and 2mm of camber underfoot, gives you true versatility all over the mountain.  If you are looking for a playful ski that performs from the park to the peaks then the Nomad 95 is the ski for you!</td>
+			</tr>
+			<tr>
+				<td>Icelantic</td>
+				<td>Nomad 105</td>
+				<td>161, 171, 181</td>
+				<td>The Nomad 105 is Icelantic’s flagship model, best-selling ski and the foundation of the Nomad Freeride Collection. Its 105mm platform and bombproof</td>
+			</tr>
+			<tr>
+				<td>Icelantic</td>
+				<td>Nomad 115</td>
+				<td>181</td>
+				<td>Icelantic Nomad 115 181 The new beefed up Nomad 115 is a big mountain freeride ski. The additional girth underfoot gives the Nomad 115 the solid platform needed to float in the deepest pow and conquer the biggest lines.</td>
+			</tr>
+			<tr>
+				<td>Icelantic</td>
+				<td>Pioneer 96</td>
+				<td>166, 174</td>
+				<td>The Pioneer 96 is our one-ski-quiver, with the versatility needed to excel in any condition the mountain has to offer. Its rockered tip and tail combines with 7mm of camber underfoot and a poplar core make this ski snappy, responsive, and stable at speed.</td>
+			</tr>
+			<tr>
+				<td>Icelantic</td>
+				<td>Pioneer 109</td>
+				<td>166, 174, 182</td>
+				<td>The Pioneer 109 is a powerful all-mountain ski that can handle the soft stuff as well as it handles groomers. True all-mountain performance in a slightly wider</td>
+			</tr>
+			<tr>
+				<td>Icelantic</td>
+				<td>Sabre 89</td>
+				<td>164, 174</td>
+				<td>The new Sabre 89 is a precise all-mountain carving machine. Its tapered shape combined with a rockered tip, 9mm of camber underfoot and flat tail, creates</td>
+			</tr>
+			<tr>
+				<td>Icelantic</td>
+				<td>Oracle 88</td>
+				<td>155, 162, 169</td>
+				<td>The Oracle 88 is a lightweight and versatile ski that excels all over The mountain. The slightly tapered design, allows the skier to maintain a forward, aggressive stance in any condition, while the rockered tip and substantial</td>
+			</tr>
+			<tr>
+				<td>K2</td>
+				<td>Ikonic 80</td>
+				<td>163, 170, 177</td>
+				<td>The iKonic 80 ski features a redistributed dual wood K2 Konic construction with a lightweight and lively Aspen at its center; while it has a denser and more powerful Fir over the edges. The intuitive K2 Konic Technology and all-mountain design of the iKonic 80 makes skiing in the resorts all day long noticeably more enjoyable with unbeatable performance, regardless of the conditions or terrain</td>
+			</tr>
+			<tr>
+				<td>K2</td>
+				<td>Pinnacle 88</td>
+				<td>170, 177</td>
+				<td>The Pinnacle 88 is a streamlined version of the K2 Pinnacle 95 freeride ski, with all the guts of its bigger brethren. Have you been looking for that mythical bridge between resort skiing and freeride nirvana? Thoughtful, low-density</td>
+			</tr>
+			<tr>
+				<td>K2</td>
+				<td>Poacher</td>
+				<td>156, 163, 170, 177, 184</td>
+				<td>Clayton Vila and Sean Jordan collaboration, the K2 Poacher is our flagship tool of choice to poach the streets, icy park, or spring slush. A durable freestyle player both in the park and beyond, this stick has a Carbon Boost Braid and stiff</td>
+			</tr>
+			<tr>
+				<td>K2</td>
+				<td>Sight</td>
+				<td>149, 159, 169</td>
+				<td>The K2 Sight is our ultra-accurate pipe ski, and it’ll take you up 22-foot walls or into big landings with fresh style. We’ve accented this ski’s energetic and easy-to-ski aspen core with hardware in the tip and tail for even better durability</td>
+			</tr>
+			<tr>
+				<td>K2</td>
+				<td>Press</td>
+				<td>149, 159, 169</td>
+				<td>The K2 Press packs more pop and ollie power into an affordable model, built for the emerging park skier. We’ve put our signature Triaxal Braiding to work in a unique Park Flex pattern alongside a naturally easy-to-ski aspen core, and this</td>
+			</tr>
+			<tr>
+				<td>K2</td>
+				<td>Luv 75</td>
+				<td>142, 149, 156, 163</td>
+				<td>Forgiving and easy to maneuver, this ski’s Catch-Free Rocker and ultra-light composite core keep your legs fresher than morning yoga. Softly rounded tip and tail ease into turns to remind you how much fun it is to fly downhill any season, and classic cap construction ties this delicious piece together – the Luv 75 is the complete package for all-mountain explorers.</td>
+			</tr>
+			<tr>
+				<td>K2</td>
+				<td>Luv Boat 105</td>
+				<td>163</td>
+				<td>The new Luv Boat 105 comes packed with Bioflex Konic construction, embracing the proven benefits that Konic and Nanolite tech bring to our men’s freeride skis with the female-favorite combination of aspen and paulownia wood core. Your new big-mountain life vest, the Luv Boat 105 was designed to keep you afloat and cruising however the tides may turn.</td>
+			</tr>
+			<tr>
+				<td>K2</td>
+				<td>Alluvit 88</td>
+				<td>156, 163</td>
+				<td>The AllLuvit 88 slims down and bridges the gap between versatile freeride and confident all-mountain skiing. We don’t throw the term “women’s-specific” around lightly – the AllLuvit 88 was built for the lady shredder who stuns the slopes in deep powder, over fresh cord, and through wily bumps alike.</td>
+			</tr>
+
+		</thead>
+	</table>
+</div>
+</body>
+</html>
