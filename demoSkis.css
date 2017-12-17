@@ -1,4 +1,27 @@
-table.skis, tr, td {
-  border: 1px solid;
+table, tr, td {
+  border: 0;
   border-collapse: collapse;
-};
+  font-family: 'Source Sans Pro', sans-serif; 
+}
+
+tr:nth-child(even) {background: #fff}
+tr:nth-child(odd) {background: #127C3C}
+
+th {
+	background: white;
+	padding: 10px 0 10px 0;
+}
+
+tr.header {
+	position: fixed;
+}
+
+th.headerCol {
+	background: #127C3C;
+	z-index: 1;
+	padding-right: 22px;
+}
+
+td.blank {
+	background: #fff;
+}
