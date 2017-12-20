@@ -2,15 +2,20 @@
 <html>
 <head>
 <title>Demo Skis</title>
-<link rel="stylesheet" type="text/css" href="demoSkis.css">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap.no-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="demoSkis.css">
 <script type="text/javascript" src="demoSkis.js"></script>
 </head>
 <body>
-	<h1>Epic Mountain Sports' New Demo Skis</h1>  
+	
+<section class="container">
+	<h1>Epic Mountain Sports' Demo Skis</h1>  
+
+	<input type="search" class="light-table-filter" data-table="order-table" placeholder="Ski search" />
   
   	<select type="search" class="select-table-filter" data-table="order-table">
+  		<option value="" selected disabled>Brands &#9207;</option>
     	<option value="">Reset</option>
     	<option value="Armada">Armada</option>   
     	<option value="Atomic">Atomic</option>  
@@ -28,12 +33,6 @@
 	<select>
 
 	<table class="order-table">
-		<tr>
-			<th colspan="5">Men</th>
-		</tr>
-		<tr>
-
-		</tr>
 		<thead>
 		<tr class="header">
 			<th class="headerCol">Brand</th>
@@ -45,7 +44,16 @@
 	</thead>
 	<tbody>
 		<tr>
-			<th colspan="5">Armada</th>
+			<td class="blank">
+    			<br/>
+		    	<br/>
+			</td>
+		</tr>
+		<tr>
+			<th style="font-size: 120%">Men</th>
+		</tr>
+		<tr>
+			<th>Armada</th>
 		</tr>
 		<tr>
 			<td>Armada</td>
@@ -76,7 +84,7 @@
 			<td>Blurring the lines between big mountain freeride and alpine touring, the Armada Tracer 108 Skis leave little to be desired on the downhill, fit for an everyday quiver of one. Relatively stiff in flex with a versatile EST Freeride Rocker line and fast, easy to maintain Comp bases.</td>
 		</tr>
 		<tr>
-			<th colspan="5">Atomic</th>
+			<th>Atomic</th>
 		</tr>
 		<tr>
 			<td>Atomic</td>
@@ -107,7 +115,7 @@
 			<td>The Atomic Backland FR 109 Skis are a versatile freeride setup whether they're mounted up as a touring rig for deep day forays, or as all-mountain pillagers when conditions are soft.</td>
 		</tr>
 		<tr>
-			<th colspan="5">Dynastar</th>
+			<th>Dynastar</th>
 		</tr>
 		<tr>
 			<td>Dynastar</td>
@@ -145,7 +153,7 @@
 			<td>The new Dynastar Legend X 106 Skis made quick work of the competition in last spring's industry demos, getting raves from testers in the ultra competitive 106 mm class. Perfectly balanced tip to tail, super responsive to turn input but still quiet at speed, and able to carve or slarve at the skier's will, the Legend X 106 is arguably the best mid fat in the world this season.</td>
 		</tr>
 		<tr>
-			<th colspan="5">Elan</th>
+			<th>Elan</th>
 		</tr>
 		<tr>
 			<td>Elan</td>
@@ -176,7 +184,7 @@
 			<td>The Ripstick 106 was designed for skiers that seek exceptional performance while exploring all that the mountain has to offer. It's a smooth ride no matter where you take it - front side, steeps, trees, or exploring untouched terrain, this lightweight versatile ski is up for any challenge. </td>
 		</tr>
 		<tr>
-			<th colspan="5">Fischer</th>
+			<th>Fischer</th>
 		</tr>
 		<tr>
 			<td>Fischer</td>
@@ -200,7 +208,7 @@
 			<td>The Fischer Ranger 98 Ti Skis are their most popular width. With their 98 mm waist and a floaty 132 mm tip with a smooth Freeski Rocker profile, this ski is at home in anything from a foot of powder to tracked up mank, and you'll be thankful for the versatility.</td>
 		</tr>
 		<tr>
-			<th colspan="5">Head</th>
+			<th>Head</th>
 		</tr>
 		<tr>
 			<td>Head</td>
@@ -210,7 +218,7 @@
 			<td>Framewall from dings and delams. Within this protective wall we stuck a Sandwich Twintip Construction for balanced switch and regular riding, and turbo charged it with the catch free rocker tip and tail of PNP Rocker and hard riding camber underfoot. </td>
 		</tr>
 		<tr>
-			<th colspan="5">Icelantic</th>
+			<th>Icelantic</th>
 		</tr>
 		<tr>
 			<td>Icelantic</td>
@@ -241,7 +249,7 @@
 			<td>The Award Winning Nomad 115 is a beefed up, big mountain freeride ski. The additional girth underfoot gives the Nomad 115 the solid platform needed to float in the deepest pow and conquer the biggest lines. </td>
 		</tr>
 		<tr>
-			<th colspan="5">K2</th>
+			<th>K2</th>
 		</tr>
 		<tr>
 			<td>K2</td>
@@ -272,7 +280,7 @@
 			<td>This 105 mm underfoot directional destroyer handles everything from blower, to mank, to icy groomers with ease. With their updated All-Terrain Rocker profile that now features more camber and a lower rocker entry, and plenty of surface area to handle the fresh, the K2 Pinnacle 105 Skis rips it all. </td>
 		</tr>
 		<tr>
-			<th colspan="5">Liberty</th>
+			<th>Liberty</th>
 		</tr>
 		<tr>
 			<td>Liberty</td>
@@ -296,7 +304,7 @@
 			<td>Sweeping magazine tests and setting a new standard for everyday drivers on bigger mountains, the Origin106 hits the sweet spot. Plenty of float for deeper days, and the torsional rigidity to carve harder snow at high speed, the Origin106 makes the good days better.</td>
 		</tr>
 		<tr>
-			<th colspan="5">Line</th>
+			<th>Line</th>
 		</tr>
 		<tr>
 			<td>Line</td>
@@ -327,7 +335,7 @@
 			<td>From big faces in the backcountry to those all-time days pilfering pow in the trees, the all-new LINE Sick Day 114 Skis are the lightest, most versatile pow skis to hit the market. Whether you’re hard arcing or playfully surfing, the Sick Day 114 abides.</td>
 		</tr>
 		<tr>
-			<th colspan="5">Meier</th>
+			<th>Meier</th>
 		</tr>
 		<tr>
 			<td>Meier</td>
@@ -351,7 +359,7 @@
 			<td>Perfection Repeated. Is perfection possible? This annual award winning all-terrain, all-mountain ski comes mighty close. The 115mm underfoot is enough to float on any powder day, while the aggressive sidecut allows you to lay it down on the groomers</td>
 		</tr>
 		<tr>
-			<th colspan="5">RMU</th>
+			<th>RMU</th>
 		</tr>
 		<tr>
 			<td>RMU</td>
@@ -368,7 +376,7 @@
 			<td>Like a 10' 5" gun on the Hawaiian North Shore, the RMU North Shore 2.0 Skis are designed to charge hard and fast and provide max stability for the rider. This 114 mm waisted big mountain crusher is great to have in the quiver for those deep days, but surprisingly versatile in less euphoric conditions.</td>
 		</tr>
 		<tr>
-			<th colspan="5">Rossignol</th>
+			<th>Rossignol</th>
 		</tr>
 		<tr>
 			<td>Rossignol</td>
@@ -385,7 +393,7 @@
 			<td>Air Tip 2.0 makes it even better by further increasing dampness and decreasing deflection while reducing swing weight. Thanks to their ultra-versatile 106 mm waist, the Rossignol Soul 7 HD Skis remain adept across the entire mountain.</td>
 		</tr>
 		<tr>
-			<th colspan="5">Volkl</th>					
+			<th>Volkl</th>					
 		</tr>
 		<tr>
 			<td>Volkl</td>
@@ -401,10 +409,10 @@
 			</td>
 		</tr>
 		<tr>
-			<th colspan="5" style="padding-bottom: 10px">Women</th>
+			<th style="font-size: 120%">Women</th>
 		</tr>
 		<tr>
-			<th colspan="5">Armada</th>
+			<th>Armada</th>
 		</tr>
 		<tr>
 			<td>Armada</td>
@@ -435,7 +443,7 @@
 			<td>With the Armada Trace 98 Skis you get incredibly versatile performance in a lightweight, touring-friendly package. Designed with a hybrid core that blends a responsive flex with minimal heft, the Trace 98s offer easy maneuverability on both climbs and descents.</td>
 		</tr>
 		<tr>
-			<th colspan="5">Atomic</th>
+			<th>Atomic</th>
 		</tr>
 		<tr>
 			<td>Atomic</td>
@@ -452,7 +460,7 @@
 			<td>LoTheir 95 mm waist and tip and tail all-mountain rocker transitions nicely from groomed to deeper snow. Tamable, but with surprising power under the hood, the Atomic Vantage 95 C W Skis are perfect for the adventurous all-mountain skier.</td>
 		</tr>
 		<tr>
-			<th colspan="5">Blizzard</th>
+			<th>Blizzard</th>
 		</tr>
 		<tr>
 			<td>Blizzard</td>
@@ -462,7 +470,7 @@
 			<td>Easy to maneuver in softer snow, yet solid underfoot when the going gets icy, the Black Pearl 88 has been a top seller for years for a reason. The 88 mm waist is ideal for carving precise turns on the groomed but provides enough float to handle that surprise overnight storm with ease</td>
 		</tr>
 		<tr>
-			<th colspan="5">Dynastar</th>
+			<th>Dynastar</th>
 		</tr>
 		<tr>
 			<td>Dynastar</td>
@@ -486,7 +494,7 @@
 			<td>The Dynastar Legend 96 W Skis are a light and snappy all-mountain ride with a penchant for softer snow and the quick response you need in tight chutes and trees. The Legend 96 kills it in any snow conditions, anywhere on the mountain.</td>
 		</tr>
 		<tr>
-			<th colspan="5">Elan</th>
+			<th>Elan</th>
 		</tr>
 		<tr>
 			<td>Elan</td>
@@ -517,7 +525,7 @@
 			<td>No need to put on your lipstick when it's time to bring out these babies, as faceshots will be providing a complete make-over! As the widest Ripstick for women, the 102 W is the ultimate ladies freeride ski to use when it gets deep and steep. </td>
 		</tr>
 		<tr>
-			<th colspan="5">Fischer</th>
+			<th>Fischer</th>
 		</tr>
 		<tr>
 			<td>Fischer</td>
@@ -534,7 +542,7 @@
 			<td>Top freeride technology combined with moderate width so cool women skiers are on top in powder and can enjoy awesome ski performance in any type of snow. Thanks to the lightweight poplar wood core construction and Air Tec Ti the ski offers top stability and easy skiing.</td>
 		</tr>
 		<tr>
-			<th colspan="5">Head</th>
+			<th>Head</th>
 		</tr>
 		<tr>
 			<td>Head</td>
@@ -544,7 +552,7 @@
 			<td>Speed your trip up the learning curve with the Head Pure Joy Skis. With a variable radius sidecut that requires less effort to engage the edges in a turn.</td>
 		</tr>
 		<tr>
-			<th colspan="5">Icelantic</th>
+			<th>Icelantic</th>
 		</tr>
 		<tr>
 			<td>Icelantic</td>
@@ -554,7 +562,7 @@
 			<td>Light, nimble and precise, the Icelantic Oracle 88 Skis are a more than capable all-mountain ride for skiers looking to tame everything from manicured corduroy to 6 inches of fluff.</td>
 		</tr>
 		<tr>
-			<th colspan="5">K2</th>
+			<th>K2</th>
 		</tr>
 		<tr>
 			<td>K2</td>
@@ -571,7 +579,7 @@
 			<td>With the K2 ThrilLUVit 85 Skis the exhilaration and adrenaline become second nature. An all-mountain ski with a waist tending towards the skinnier side, these snow-sticks will have you loving every moment you spend on the mountain, from wide open corduroy to those hidden tree-run trails.</td>
 		</tr>
 		<tr>
-			<th colspan="5">Liberty</th>
+			<th>Liberty</th>
 		</tr>
 		<tr>
 			<td>Liberty</td>
@@ -588,7 +596,7 @@
 			<td>The new Liberty Genesis 96 is an excellent ski for the ladies who are going to be out searching for the deep snow and sending the occasional cliff. With awesome floatation when it has been dumping every night, but still can feel nimble and tight turning</td>
 		</tr>
 		<tr>
-			<th colspan="5">Line</th>
+			<th>Line</th>
 		</tr>
 		<tr>
 			<td>Line</td>
@@ -605,7 +613,7 @@
 			<td>The Line Skis Soulmate 92 Skis pair their directional profile with a wider 92mm waist and carbon stringers for a seriously fun all-mountain ride that's got some giddy-up to it! </td>
 		</tr>
 		<tr>
-			<th colspan="5">Nordica</th>
+			<th>Nordica</th>
 		</tr>
 		<tr>
 			<td>Nordica</td>
@@ -615,7 +623,7 @@
 			<td>Capable of tackling all terrain and snowfall, these skis deliver an incredibly versatile ride. With their 100 mm waist width, the Nordica Santa Ana 100 Skis are the perfect do-it-all charger - now it's up to you to give them a go!</td>
 		</tr>
 		<tr>
-			<th colspan="5">RMU</th>
+			<th>RMU</th>
 		</tr>
 		<tr>
 			<td>RMU</td>
@@ -632,7 +640,7 @@
 			<td>Designed as a tool for women who like their snow deep and untracked, but who are capable of taking their skills anywhere with confidence, the new RMU Valhalla Skis feature a versatile 104 mm waist paired with a five-point shape and plenty of tip and tail rocker to keep you above the snow's surface. </td>
 		</tr>
 		<tr>
-			<th colspan="5">Rossignol</th>
+			<th>Rossignol</th>
 		</tr>
 		<tr>
 			<td>Rossignol</td>
@@ -670,7 +678,7 @@
 			<td>Thanks to their ultra-versatile 106 mm waist, the Rossignol Soul 7 HD W Skis remain adept across the entire mountain, thriving in soft snow with their flotation friendly rocker profile and tapered tip and tail.</td>
 		</tr>
 		<tr>
-			<th colspan="5">Salomon</th>
+			<th>Salomon</th>
 		</tr>
 		<tr>
 			<td>Salomon</td>
@@ -680,7 +688,7 @@
 			<td>The Salomon QST Lux 92 Skis, sporting a versatile All-Terrain Rocker and a carbon/flax reinforced wood core, are engineered to tackle the far reaches of the mountain with ease. Thanks to a quick turning radius, the QST Lux is equally at home in the back bowls and on frontside groomers</td>
 		</tr>
 		<tr>
-			<th colspan="5">Volkl</th>
+			<th>Volkl</th>
 		</tr>
 		<tr style="background-color: #127C3C">
 			<td>Volkl</td>
@@ -691,5 +699,6 @@
 		</tr>
 	</tbody>
 	</table>
+	</section>
 	</body>
 </html>
