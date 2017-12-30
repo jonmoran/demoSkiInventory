@@ -16,6 +16,11 @@ tr.header {
 	position: fixed;
 }
 
+img {
+  height: 300px;
+  width: 50%;
+}
+
 .container {
   text-align: center;
   overflow: hidden;
@@ -41,7 +46,6 @@ th.headerCol {
 	background: #127C3C;
 	z-index: 1;
 	padding-right: 22px;
-	font-size: 120%;
 }
 
 td.blank {
