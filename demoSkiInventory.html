@@ -3,9 +3,120 @@
 <head>
 <title>Demo Skis</title>
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="demoSkis.css">
-<script type="text/javascript" src="demoSkis.js"></script>
+<style type="text/css"> 
+table, tr, td {
+  border: 0;
+  border-collapse: collapse;
+  font-family: 'Source Sans Pro', sans-serif; 
+}
+
+tr:nth-child(even) {background: #fff}
+tr:nth-child(odd) {background: #127C3C}
+
+th {
+	background: white;
+	padding: 10px 0 10px 0;
+}
+
+tr.header {
+	position: fixed;
+}
+
+.container {
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.light-table-filter {
+	border: solid 1px #517B97; 
+    outline: 0; 
+ }
+
+ .select-table-filter {
+ 	border: solid 1px #517B97; 
+    outline: 0; 
+}
+
+.container table {
+  width: 100%;
+}
+
+th.headerCol {
+	background: #127C3C;
+	z-index: 1;
+	padding-right: 22px;
+}
+
+td.blank {
+	background: #fff;
+}
+</style>
+<script type="text/javascript">(function(document) {
+	'use strict';
+
+	var LightTableFilter = (function(Arr) {
+
+	var _input;
+    var _select;
+
+		function _onInputEvent(e) {
+			_input = e.target;
+			var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+			Arr.forEach.call(tables, function(table) {
+				Arr.forEach.call(table.tBodies, function(tbody) {
+					Arr.forEach.call(tbody.rows, _filter);
+				});
+			});
+		}
+    
+		function _onSelectEvent(e) {
+			_select = e.target;
+			var tables = document.getElementsByClassName(_select.getAttribute('data-table'));
+			Arr.forEach.call(tables, function(table) {
+				Arr.forEach.call(table.tBodies, function(tbody) {
+					Arr.forEach.call(tbody.rows, _filterSelect);
+				});
+			});
+		}
+
+		function _filter(row) {
+      
+			var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+			row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+
+		}
+    
+		function _filterSelect(row) {
+     
+			var text_select = row.textContent.toLowerCase(), val_select = _select.options[_select.selectedIndex].value.toLowerCase();
+			row.style.display = text_select.indexOf(val_select) === -1 ? 'none' : 'table-row';
+
+		}
+
+		return {
+			init: function() {
+				var inputs = document.getElementsByClassName('light-table-filter');
+				var selects = document.getElementsByClassName('select-table-filter');
+				Arr.forEach.call(inputs, function(input) {
+					input.oninput = _onInputEvent;
+				});
+				Arr.forEach.call(selects, function(select) {
+         select.onchange  = _onSelectEvent;
+				});
+			}
+		};
+	})(Array.prototype);
+
+	document.addEventListener('readystatechange', function() {
+		if (document.readyState === 'complete') {
+			LightTableFilter.init();
+		}
+	});
+
+})(document);
+</script>
 </head>
 <body>
 	
